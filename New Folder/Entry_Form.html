@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Entry Form</title>
+        <script src="EntryForm.js"></script>
+        <style>
+            body{
+                text-align: center;
+                background-color: red;
+            }
+            .background{
+                text-align: left;
+            }
+            .submitA{
+                font-size: 50px;
+                font-family: Rockwell;
+                color: blue;
+                background-color: #66ff66;
+                display: inline-block;
+
+            }
+        </style>
+    </head>
+    
+    <body>
+        <form name="EntryForm">
+        <h1>Welcome!</h1>
+        <fieldset class=background>
+            <legend>Background Information</legend>
+            Name:<input type=text id="idTxtName">
+            <br><br>
+            Date of Birth:<input type="text" id="idDOB">
+            <br><br>
+            Do you have a job?<select id="idJob">
+                <option>yes</option>
+                <option>no</option>
+            </select>
+        </fieldset>
+        <br><br>
+        <fieldset class=background>
+            <legend>Postal Information</legend>
+            State:<input type=text id="idState">
+            <br><br>
+            City:<input type=text id="idCity">
+            <br><br>
+            Street Address:<input type=text id="idStAd">
+            <br><br>
+            Zip-Code:<input type=text id="idZipCode">
+        </fieldset>
+        <br><br>
+        <fieldset class=background>
+            <legend>Tell me about your self</legend>
+            What is your favoite food?<input type=text id="idFood">
+            <br><br>
+            What is your least favorite food?<input type=text id="idLfood">
+            <br><br>
+            What is your favorite sport?<input type=text id="idSport">
+            <br><br>
+            What is your least favorite sport?<input type=text id="idLsport">
+            <br><br>
+            What are your hobby(s)?<textarea cols=15 rows=3 id="idHobby"></textarea>
+        </fieldset>
+        <input type=button class=submitA onClick="submitAll()" value="Submit">
+        </form>
+    </body>
+</html>
